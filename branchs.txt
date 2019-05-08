@@ -1,0 +1,9 @@
+CREATE TABLE Branch(
+Branch_id NUMBER(10) NOT NULL PRIMARY KEY,
+Branch_name VARCHAR(25) NOT NULL,
+Branch_head VARCHAR(25) NOT NULL,
+Branch_tot_emp NUMBER(25) NOT NULL,
+Branch_contact VARCHAR(15) NULL,
+Branch_phn_no VARCHAR(15) NOT NULL,
+divn_id NUMBER NOT NULL References division(divn_id))
+
